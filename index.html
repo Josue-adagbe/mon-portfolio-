@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">Joshua Web</h1>
+    
+    <nav class="nav">
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="menu" id="menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <!--Accuile du site-->
+    <section id="accueil">
+      <figure>
+        <img src="/monim_1.png" alt="Mon image" />
+        <figcaption>
+          Joshua Web, développeur junior, je suis
+          spécialisé dans le front-end. Ce site est mon portfolio.
+        </figcaption>
+      </figure>
+    </section>
+    
+    
+    <!--Section Projets-->
+    <section id="projets">
+      <figure>
+        <img src="/impro.png" alt="Image projet" />
+        <figcaption>
+          Mon portfolio que voici est mon premier projet concret et réel.
+        </figcaption>
+      </figure>
+    </section>
+    
+    
+    <!--Section Compétences-->
+    <section id="competences">
+      <div class="developpement">
+        <p>Voici ci-dessous les langages dans lesquels jai de connaissance</p>
+        <div class="competences">
+          <div class="html">
+            <div class="htmlnom">HTML</div>
+            <div class="htmlpercent">85%</div>
+          </div>
+          
+          <div class="css">
+            <div class="cssnom">CSS</div>
+            <div class="csspercent">85%</div>
+          </div>
+          
+          <div class="javascript">
+            <div class="javascriptnom">JavaScript</div>
+            <div class="javascriptpercent">15%</div>
+          </div>
+          
+          <div class="python">
+            <div class="pythonnom">Python</div>
+            <div class="pythonpercent">40%</div>
+          </div>
+          
+          <div class="langagec">
+            <div class="langagecnom">Langage C</div>
+            <div class="langagecpercent">65%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!--Section Expériences-->
+    <section id="experiences">
+      <div class="developpement">
+        <p>Mon année d'expériences en développement web</p>
+        <div id="anneeExperience">
+          -1
+        </div>
+      </div>
+    </section>
+    
+    
+    <!--Section À propos-->
+    <section id="apropos">
+      <div class="developpement">
+        <h2>À propos</h2>
+        Je suis Josué Caleb ADAGBE, étudiant en
+        deuxième année de licence en maintenance biomédicale et hospitalière au
+        Bénin. Mon domaine formation étant le biomédicale, on est appelé à avoir
+        au moins un peu de connaissances dans presque tous les domaines
+        techniques
+        pouvant nous aider à innover pour la médecine en qui devient même
+        robotisée. Pour celà, nous avons fait le cours de langage et
+        programmation
+        en licence 1 où nous avons appris le langage C. Au cour de ce semestre,
+        j'ai décidé de beaucoup plus connaître en programmation puis en licence
+        2
+        j'ai décidé de devenir développeur web. J'ai donc choisi la formation du
+        web comme activité parauniversitaire. Je fais cette formation à travers
+        des tutoriels, des sites de formation, des PDF, des groupes WhatsApp et
+        autres. Actuellement, j'ai quelques mois de formation mais je suis
+        capable
+        de faire du front-end et faire certains projets de création de site web.
+      </div>
+    </section>
+    
+    
+    <!--Section Contact-->
+    <section id="contact">
+      <div class="developpement">
+        <h2>Contactez-moi</h2>
+        
+        <form id="contactForm">
+          <label for="nom">Nom <span class="important">*</span></label><input
+            type="text" name="nom" id="nom" placeholder="ZOZO" min="1" max="20"
+            required />
+          
+          <label for="prenom">Prénom <span
+              class="important">*</span></label><input type="text" name="prenom"
+            id="prenom" placeholder="Ozoz" min="1" max="20" required />
+          
+          <label for="email">Adresse email<span
+              class="important">*</span></label><input type="email" name="email"
+            id="email" placeholder="zozo@gmail.com" min="1" required />
+          
+          <label for="pays">Pays <span class="important">*</span></label><select
+            name="pays" id="pays">
+            <option value="sélectionner un pays">Sélectionner un Pays</option>
+            <option value="Afrique du Sud">Afrique du Sud</option>
+            <option value="Algérie">Algérie</option>
+            <option value="Angola">Angola</option>
+            <option value="Bénin">Bénin</option>
+            <option value="Botswana">Botswana</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Burundi">Burundi</option>
+            <option value="Cameroun">Cameroun</option>
+            <option value="Cap-Vert">Cap-Vert</option>
+            <option value="Comores">Comores</option>
+            <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+            <option value="Djibouti">Djibouti</option>
+            <option value="Égypte">Égypte</option>
+            <option value="Érythrée">Érythrée</option>
+            <option value="Eswatini">Eswatini</option>
+            <option value="Éthiopie">Éthiopie</option>
+            <option value="Gabon">Gabon</option>
+            <option value="Gambie">Gambie</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Guinée équatoriale">Guinée équatoriale</option>
+            <option value="Guinée">Guinée</option>
+            <option value="Guinée-Bissau">Guinée-Bissau</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Lesotho">Lesotho</option>
+            <option value="Liberia">Liberia</option>
+            <option value="Libye">Libye</option>
+            <option value="Madagascar">Madagascar</option>
+            <option value="Malawi">Malawi</option>
+            <option value="Mali">Mali</option>
+            <option value="Maroc">Maroc</option>
+            <option value="Maurice">Maurice</option>
+            <option value="Mauritanie">Mauritanie</option>
+            <option value="Mozambique">Mozambique</option>
+            <option value="Namibie">Namibie</option>
+            <option value="Niger">Niger</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ouganda">Ouganda</option>
+            <option value="République centrafricaine">République centrafricaine
+            </option>
+            <option value="République démocratique du Congo">République
+              démocratique du Congo</option>
+            <option value="République du Congo">République du Congo</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="São Tomé-et-Príncipe">São Tomé-et-Príncipe</option>
+            <option value="Sénégal">Sénégal</option>
+            <option value="Seychelles">Seychelles</option>
+            <option value="Sierra Leone">Sierra Leone</option>
+            <option value="Somalie">Somalie</option>
+            <option value="Soudan">Soudan</option>
+            <option value="Soudan du Sud">Soudan du Sud</option>
+            <option value="Tanzanie">Tanzanie</option>
+            <option value="Tchad">Tchad</option>
+            <option value="Togo">Togo</option>
+            <option value="Tunisie">Tunisie</option>
+            <option value="Zambie">Zambie</option>
+            <option value="Zimbabwe">Zimbabwe</option>
+          </select>
+          
+          <label for="telephone">Telephone (WhatsApp) <span
+              class="important">*</span></label><input type="tel"
+            name="telephone" id="telephone" placeholder="+229 01 00 00 00 00"
+            required />
+          
+          <label for="message">Votre message <span
+              class="important">*</span></label><textarea name="message"
+            id="message" placeholder="Votre message" required></textarea>
+          
+          <input type="text" name="website" style="display:none">
+          
+          <button type="submit" id="submitBtn">Soumettre</button>
+          
+          <div id="formMessage" class="form-message"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>©2026 <span class="page">Joshua Web</span></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+  </script>
+  <script src="main.js"></script>
+</body>
+
+  </html>
