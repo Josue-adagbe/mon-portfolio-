@@ -1,0 +1,346 @@
+/* =========================
+   RESET & BASE
+========================= */
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bbh-bartle-regular {
+  font-family: "BBH Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Varela Round;
+    background: #F5F7FB;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER & NAV
+========================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #4A58FF;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: BBH Bartle;
+    font-style: oblique;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: -0.12em;
+}
+
+/* NAV */
+.nav {
+    position: relative;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #FFFFFF33;
+}
+
+figure{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#accueil img{
+    width: 25%;
+}
+
+figcaption{
+    margin: 40px;
+}
+/* =========================
+   BURGER
+========================= */
+.burger {
+    width: 32px;
+    height: 24px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger span {
+    height: 3px;
+    background: #fff;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4A58FF;
+}
+
+/* =========================
+   COMPÉTENCES
+========================= */
+.competences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.competences > div {
+    background: linear-gradient(135deg, #4A58FF, #6C79FF);
+    color: #fff;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.competences div div:first-child {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.competences div div:last-child {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* =========================
+   EXPÉRIENCE
+========================= */
+#anneeExperience {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #4A58FF;
+    text-align: center;
+}
+
+/* =========================
+   FORMULAIRE
+========================= */
+form {
+    display: grid;
+    gap: 16px;
+}
+
+input, textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    background: #4A58FF;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #3643e8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #6b7280;
+}
+
+/* =========================
+   MOBILE NAV
+========================= */
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #4A58FF;
+        flex-direction: column;
+        width: 220px;
+        padding: 20px;
+        border-radius: 14px;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    section {
+        padding: 28px 20px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    #anneeExperience {
+        font-size: 3.5rem;
+    }
+}
+
+/* =========================
+   BURGER ANIMATION
+========================= */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+figure{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#accueil img{
+    width: 55%;
+    margin: auto;
+    box-shadow: 0px 0px 5px #000000;
+    border-radius: 50% / 70%;
+}
+
+figcaption{
+    margin: 40px;
+}
+
+#projets figure{
+    width: 85%;
+    margin: auto;
+}
+
+#projets img{
+    box-shadow: 0px 0px 5px #000000;
+    border-radius: 25px;
+    width: 65%;
+    margin: auto;
+    opacity: 0.8;
+}
+
+.form-message {
+  display: none;
+  margin-top: 15px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.form-message.success {
+  display: block;
+  background: #e8f9f1;
+  color: #0f5132;
+  border: 1px solid #a3e4c8;
+}
+
+.form-message.error {
+  display: block;
+  background: #fdecea;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+.form-message.loading {
+  display: block;
+  background: #fff3cd;
+  color: #664d03;
+  border: 1px solid #ffecb5;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+                                }
